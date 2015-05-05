@@ -1,0 +1,249 @@
+/*
+Theme Name: Wp Boot
+Theme URI: https://www.facebook.com/radoslav.zdravkovic
+Description: My First Bootstrap WP blog
+Version: 1.0
+Authro: Radoslav Z
+Author URI: https://www.facebook.com/radoslav.zdravkovic
+*/
+
+@import url('css/bootstrap.min.css');
+@import url('css/blog-post.css');
+
+/* FONTS */
+@font-face {
+    font-family: 'headfont'; /*a name to be used later*/
+    src: url('fonts/BebasNeue.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'bodyfont'; /*a name to be used later*/
+    src: url('fonts/Roboto-Medium.ttf'); /*URL to font*/
+}
+
+body {
+    padding-top: 70px;
+}
+
+/* HEADINGS AND PARAGRAPHS */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'headfont';
+	color: #47a3a3;
+}
+h1.postHeading {
+	font-size: 40px;
+	color: #47a3a3;
+}
+h2 {
+	font-size: 36px;
+	color: #47a3a3;
+}
+	h2 a {
+		font-size: 36px;
+		color: #47a3a3;
+	}
+	h2 a:hover {
+		color: #ffab4a;
+	}
+p {
+	font-family: 'bodyfont';
+}
+	p.featuredText {
+		margin-bottom: 0px;
+	}
+	p.postedOn {
+		margin-bottom: 20px;
+		font-size: 11px;
+		color: #ccb9ab;
+	}
+hr {
+	border: 1.3px solid #CCB9AB;
+}
+img {
+	border: 3px solid #47a3a3;
+}
+
+/* STRUCTURE */
+@media screen and (min-width: 768px) {
+.carousel-indicators {
+    bottom: -35px;
+}
+}
+.carousel-indicators {
+    bottom: -35px;
+}
+@media (min-width: 1200px) {
+.container {
+  width: 960px;
+}
+}
+.featuredPost {
+	background-color: #3d5e6e;
+	position: relative;
+	top: -20px;
+	border-bottom: 2px solid #ffab4a;
+	color: white;
+}
+	.featuredPostContent {
+		    padding: 20px 15px 40px 15px;
+	}
+		.featuredPostContent h2 {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 52px;
+		}
+		.featuredPostContent h2 a {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 62px;
+			color: #D1ECEC;
+		}
+	.featuredPostImage {
+		float: left;
+		width: 310px;
+		height: 190px;
+		margin: 0 20px 10px 0;
+		border: 3px solid #47a3a3;
+	}
+	.PostImage {
+		float: left;
+		width: 270px;
+		height: 160px;
+		margin-right: 20px;
+		border: 3px solid #47a3a3;
+	}
+#posts_wrapper {
+	padding-bottom: 30px;
+}
+.categoryDesc {
+	position: relative;
+	top: -20px;
+	background-color: #ccb9ab;
+	border-bottom: 2px solid #ffab4a;
+}
+.categoryDesc h1 {
+	color: #1E2129;
+	font-size: 46px;
+	text-align: center;
+}
+.categoryContent {
+	padding: 20px 15px;
+}
+ 
+/* WIDGETS */
+.well {
+    min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: #FFF;
+	border: 2px solid #CCB9AB;
+	border-radius: 4px;
+}
+.well h4, .well p , .well a {
+	color: #1e2129;
+}
+.well a:hover {
+	color: #ffab4a;
+	text-decoration: none;
+}
+
+/* MENU */
+.navbar-inverse {
+	background-color: #1e2129;
+	border-bottom: 2px solid #47a3a3;
+	box-shadow: 0px 0px 20px #3A2F2F;
+}
+@media (min-width: 768px) {
+.navbar-nav {
+  float: right;
+  margin: 0;
+}
+}
+.navbar-fixed-top {
+  position: absolute;
+}
+.navbar-inverse .navbar-brand, 
+.navbar-inverse .navbar-nav>li>a {
+  color: #ccb9ab;
+}
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: #ffab4a;
+  background: none;
+}
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover {
+  color: #ccb9ab;
+  background: none;
+}
+#menu-main_menu {
+	font-size: 18px;
+	font-family: 'headfont';
+	letter-spacing: 1px;
+} 
+
+/* BUTTONS ICONS AND LINKS */
+.featuredPostContent .readmoreButton {
+	margin-top: 15px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33333;
+	border: 3px solid white;
+	border-radius: 6px;
+	color: #3d5e6e;
+}
+	.featuredPostContent  a.readmoreButton:hover {
+		text-decoration: none;
+		border: 3px solid #ffab4a;
+		background: #ffab4a; 
+	}
+	.featuredPostContent .readmoreArrow {
+		top: 3px;
+		padding-left: 3px;
+}
+.postIndex .readmoreButton {
+	margin-top: 15px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33333;
+	border: 3px solid #47a3a3;
+	border-radius: 6px;
+	color: #47a3a3;
+}
+	.postIndex a.readmoreButton:hover {
+		text-decoration: none;
+		border: 3px solid #ffab4a;
+		color: #ffab4a;
+	}
+	.postIndex .readmoreArrow {
+		top: 3px;
+		padding-left: 3px;
+}
+.btn-default:hover {
+	background-color: white;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+/* CUSTOM FOOTER STYLES */
+.firstFooter {
+	background-color: #3d5e6e;
+	position: relative;
+	border-top: 2px solid #ffab4a;
+	color: white;
+}
+	.firstFooter h3 {
+		color: #D1ECEC;
+	}
+.bottomFooter {
+	background-color: #1e2129;
+	position: relative;
+	border-top: 2px solid #ffab4a;
+	color: white;
+}
+footer {
+  margin: 20px 0;
+}
